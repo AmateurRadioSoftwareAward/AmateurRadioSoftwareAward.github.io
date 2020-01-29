@@ -1,0 +1,40 @@
+{
+  "name": "cqqrz-website",
+  "version": "4.0.0",
+  "description": "Source for the Amateur Radio Software Award website",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src/**/*",
+        "template.html"
+      ],
+      "extensions": "*"
+    }
+  },
+  "scripts": {
+    "start": "concurrently -n \"WATCH,HTTP\" \"npm run watch\" \"npm run http\" \"npm run open\"",
+    "http": "serve dist",
+    "open": "sleep 3 && start http://localhost:5000",
+    "watch": "npm-watch",
+    "build": "node build.js",
+    "deploy": "node build.js && gh-pages -d dist -b master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmateurRadioSoftwareAward/AmateurRadioSoftwareAward.github.io.git"
+  },
+  "author": "Claus Niesen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AmateurRadioSoftwareAward/AmateurRadioSoftwareAward.github.io/issues"
+  },
+  "homepage": "https://amateurradiosoftwareaward.github.io/",
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "fs-extra": "^8.0.1",
+    "gh-pages": "^2.0.1",
+    "klaw": "^3.0.0",
+    "npm-watch": "^0.6.0",
+    "serve": "^11.2.0"
+  }
+}

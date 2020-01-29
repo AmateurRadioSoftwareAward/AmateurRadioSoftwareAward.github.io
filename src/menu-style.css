@@ -1,0 +1,73 @@
+.banner_left {
+	position: absolute;
+	top: 0; 
+    left: 0;
+    margin: 25px;
+}
+
+.banner_right {
+	position: absolute;
+	top: 0;
+	right: 0%;
+    margin: 25px;
+}
+
+.banner_center {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+.banner_site_title {
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin: 20px;
+}
+
+.banner_site_subtitle {
+	text-align: center;
+	font-style: italic;
+}
+
+.banner_menu {
+	text-align: center;
+	margin: 20px
+}
+
+.menu-button {
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: smaller;
+  font-weight: bold;
+  margin: 2px 1px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #6699cc;
+  border-radius: 10px
+}
+
+hr {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(153, 204, 255, 0), rgba(153, 204, 255, 1), rgba(153, 204, 255, 0));
+}
+
+.active, .menu-button:hover {
+  background-color: #99ccff; 
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 1100px) {
+    .banner_left {display: none;}
+    .banner_right {display: none;}
+}
