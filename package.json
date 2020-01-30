@@ -1,6 +1,6 @@
 {
-  "name": "cqqrz-website",
-  "version": "4.0.0",
+  "name": "AmateurRadioSoftwareAwardWebsite",
+  "version": "1.0.0",
   "description": "Source for the Amateur Radio Software Award website",
   "watch": {
     "build": {
@@ -14,7 +14,7 @@
   "scripts": {
     "start": "concurrently -n \"WATCH,HTTP\" \"npm run watch\" \"npm run http\" \"npm run open\"",
     "http": "serve dist",
-    "open": "sleep 3 && start http://localhost:5000",
+    "open": "start http://localhost:5000",
     "watch": "npm-watch",
     "build": "node build.js",
     "deploy": "node build.js && gh-pages -d dist -b master"
