@@ -1,0 +1,12 @@
+plugins {
+	id "com.github.node-gradle.node" version "2.2.0"
+}
+
+node {
+    version = '10.14.0'
+    download = true
+}
+
+task runLocal( type: NodeTask, dependsOn: 'npmInstall' ) {
+    args = ['start']
+}
