@@ -1,0 +1,46 @@
+* {box-sizing:border-box}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin:0;
+}
+
+#content-container {
+  margin:40px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-style: italic;
+  color: #6699cc;
+}
+
+h3 {
+  font-size: x-large;
+  font-style: italic;
+  color: #6699cc;
+}
+
+ul.spaced-list {
+  list-style-type:none;
+}
+
+.spaced-list li {
+  margin-bottom: 10px;
+}
+
+dl.definition-list {
+  margin: 30px;
+}
+
+.definition-list dt {
+  font-weight: bold;
+}
+
+.definition-list dd {
+  margin: 20px;
+}
+
+.google-form {
+  text-align: center;
+}
