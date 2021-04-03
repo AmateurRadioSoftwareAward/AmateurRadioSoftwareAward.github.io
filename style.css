@@ -44,3 +44,20 @@ dl.definition-list {
 .google-form {
   text-align: center;
 }
+
+.award {
+  margin: 40px;
+  padding: 20px;
+  background: #fff2cc;
+  border-radius: 25px;
+}
+
+.special-event {
+  margin: 40px;
+  padding: 20px;
+}
+
+.nominations {
+  margin: 40px;
+  padding: 20px;
+}
