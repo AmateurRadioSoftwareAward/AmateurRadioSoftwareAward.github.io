@@ -14,7 +14,7 @@
   "scripts": {
     "start": "concurrently -n \"WATCH,HTTP\" \"npm run watch\" \"npm run http\" \"npm run open\"",
     "http": "serve dist",
-    "open": "start http://localhost:5000",
+    "open": "start http://localhost:3000",
     "watch": "npm-watch",
     "build": "node build.js",
     "deploy": "node build.js && gh-pages -d dist -b master"
@@ -30,11 +30,11 @@
   },
   "homepage": "https://amateurradiosoftwareaward.github.io/",
   "devDependencies": {
-    "concurrently": "^6.0.0",
-    "fs-extra": "^9.1.0",
-    "gh-pages": "^3.1.0",
-    "klaw": "^3.0.0",
-    "npm-watch": "^0.9.0",
-    "serve": "^11.3.2"
+    "concurrently": "^7.0.0",
+    "fs-extra": "^10.0.0",
+    "gh-pages": "^3.2.3",
+    "klaw": "^4.0.1",
+    "npm-watch": "^0.11.0",
+    "serve": "^13.0.2"
   }
 }
