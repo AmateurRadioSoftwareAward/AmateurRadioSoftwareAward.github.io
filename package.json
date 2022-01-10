@@ -17,7 +17,7 @@
     "open": "start http://localhost:3000",
     "watch": "npm-watch",
     "build": "node build.js",
-    "deploy": "node build.js && gh-pages -d dist -b master"
+    "deploy": "node build.js && set CACHE_DIR=/tmp&& gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
