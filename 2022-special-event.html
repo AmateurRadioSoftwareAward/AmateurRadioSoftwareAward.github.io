@@ -73,14 +73,14 @@
       const currentDay = new Date();
       const secondWeekStart = new Date(2022,07,29); // month index starts at 0
       const secondWeekEnd = new Date(2022,08,05); // month index starts at 0
-      var secondWeekUrl = "https://calendar.google.com/calendar/embed?height=600&showTitle=0&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220829/20220904";
+      var secondWeekUrl = "https://calendar.google.com/calendar/embed?height=600&showTitle=0&wkst=2&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220829/20220904";
       if (currentDay >= secondWeekStart && currentDay <= secondWeekEnd) {
         console.log("yes");
         $('#operating-calendar').attr("src", secondWeekUrl);
       }
     })
     </script>
-    <iframe id="operating-calendar" src="https://calendar.google.com/calendar/embed?height=600&showTitle=0&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220827/20220904" style="border:solid 1px #777" width="95%" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe id="operating-calendar" src="https://calendar.google.com/calendar/embed?height=600&showTitle=0&wkst=2&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220827/20220904" style="border:solid 1px #777" width="95%" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
 
   <h3>QSL</h3>
