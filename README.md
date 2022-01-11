@@ -3,5 +3,9 @@ Amateur Radio Software Award website.
 Run locally:
   ```
   npm install
-  npm run dev
+  npm start
+  ```
+Deploy to github:
+  ```
+  npm run deploy
   ```
