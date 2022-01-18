@@ -52,12 +52,18 @@ dl.definition-list {
   border-radius: 25px;
 }
 
-.special-event {
+.nominations {
   margin: 40px;
   padding: 20px;
+  background: #ffc0cb5e;
+  background-image: url('white-heart-tower.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center; 
+  border-radius: 25px;
 }
 
-.nominations {
+.special-event {
   margin: 40px;
   padding: 20px;
 }
