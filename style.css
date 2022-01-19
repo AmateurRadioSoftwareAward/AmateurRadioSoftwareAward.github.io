@@ -67,3 +67,26 @@ dl.definition-list {
   margin: 40px;
   padding: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  #content-container {
+    margin:20px;
+  }
+  
+  dl.definition-list {
+    margin: 15px;
+  }
+  .award {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .nominations {
+    margin: 5px;
+    padding: 5px;
+  }
+  .special-event {
+    margin: 5px;
+    padding: 5px;
+  }
+}
