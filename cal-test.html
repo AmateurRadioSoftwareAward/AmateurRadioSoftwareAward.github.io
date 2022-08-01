@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amateur Radio Software Award <!-- build:title --></title>
+    <title>Amateur Radio Software Award - Award Rules</title>
     <meta name="description" content="Offial page of the Amateur Radio Software Award which promotes software projects that enhance and adhere to the spirit of amateur radio: innovative, free and open">
     <meta name="google-site-verification" content="dv5RKiVqsej9VWfRGw1rU6y43fp3Spg9ULgLUUZQLtQ" />
     <meta name="msvalidate.01" content="36B677FC5749023331AF1AAD8126392C" />
@@ -15,6 +15,21 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet"> 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+$(document).ready(function(){
+  const currentDay = new Date();
+  const secondWeekStart = new Date(2022,07,29); // month index starts at 0
+  const secondWeekEnd = new Date(2022,08,05); // month index starts at 0
+  var secondWeekUrl = "https://calendar.google.com/calendar/embed?height=600&showTitle=0&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220829/20220904";
+  if (currentDay >= secondWeekStart && currentDay <= secondWeekEnd) {
+    $('#operating-calendar').attr("src", secondWeekUrl);
+  }
+  
+})
+</script>
+
   </head>
 
   <body>
@@ -43,7 +58,17 @@
 
     <hr />
     <div id="content-container">
-    <!-- build:content -->
+    
+<h1> ARSA Special Event Calendar Test</h1>
+<p>
+This calendar is not final or released yet.  Please check <a href="https://arsaward.com/special-event.html"> https://arsaward.com/special-event.html</a> for the official operating times. If they are not poster there yet, we don't have these dates/times.
+</p>
+
+    <iframe id="operating-calendar" src="https://calendar.google.com/calendar/embed?height=600&showTitle=0&src=cHIybnQ2czcwNTRzMWNyYTZ2NnF2ZHNxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MW11M2k3aGlmMWppaTc1bmZ0ZnRkc2xidGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=dGN1amM4Nzl2ZzVqdDIxYnFpdW9xYmxmYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&color=%230B8043&color=%233F51B5&mode=WEEK&dates=20220827/20220904" style="border:solid 1px #777" width="95%" height="600" frameborder="0" scrolling="no"></iframe>
+<p>
+Some footer stuff   
+</p>
+
     </div>
   </body>
 </html>
