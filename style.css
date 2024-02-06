@@ -55,11 +55,7 @@ dl.definition-list {
 .nominations {
   margin: 40px;
   padding: 20px;
-  background: #ffc0cb5e;
-  background-image: url('white-heart-tower.png');
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: center; 
+  background: #dffaff;
   border-radius: 25px;
 }
 
