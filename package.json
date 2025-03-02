@@ -29,10 +29,10 @@
   },
   "homepage": "https://amateurradiosoftwareaward.github.io/",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "fs-extra": "^11.2.0",
-    "gh-pages": "^6.1.1",
+    "concurrently": "^9.1.2",
+    "fs-extra": "^11.3.0",
+    "gh-pages": "^6.3.0",
     "klaw": "^4.1.0",
-    "serve": "^14.2.3"
+    "serve": "^14.2.4"
   }
 }
