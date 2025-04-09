@@ -1,0 +1,65 @@
+name: ARSA Special Event Spotting
+on:
+  workflow_dispatch:
+    inputs:
+      callsign:
+        required: true
+        type: choice
+        description: Callsign of special event station
+        options:
+        - K6A
+        - K6R
+        - K6S
+      frequency:
+        required: true
+        type: number
+        description: "Frequency in MHz"
+      mode:
+        required: true
+        type: choice
+        description: Mode of operation
+        options:
+        - SSB
+        - CW
+        - FT8
+        - FT4
+        - RTTY
+        - PSK
+        - Feldhell
+        - JS8Call
+        - See notes
+      notes:
+        required: false
+        type: string
+        description: 'Notes (optional)'
+
+jobs:
+  spot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout master branch
+      uses: actions/checkout@v4
+      with:
+        ref: master
+    - name: Update spotting file
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('node:fs');
+          const SPOT_FILE_NAME = "./2025-ARSA-Special-Event-Spots.json"
+          let json = []
+          if (fs.existsSync(SPOT_FILE_NAME)) {
+            json = JSON.parse( fs.readFileSync(SPOT_FILE_NAME, 'utf8'))
+          }
+          json.push({"time": new Date(), "callsign": "${{ github.event.inputs.callsign }}", "frequency": "${{ github.event.inputs.frequency }}", "mode": "${{ github.event.inputs.mode }}", "notes": "${{ github.event.inputs.notes }}"})
+          console.log(json)
+          fs.writeFileSync(SPOT_FILE_NAME, JSON.stringify(json), 'utf8')
+    - name: Commit changes
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add 2025-ARSA-Special-Event-Spots.json
+        git commit -m "Posted ARSA Special Event spot"
+        git push
+
+          
