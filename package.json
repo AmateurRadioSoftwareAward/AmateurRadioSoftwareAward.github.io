@@ -12,11 +12,12 @@
     }
   },
   "scripts": {
-    "start": "node build.js && concurrently -n \"HTTP\" \"npm run http\" \"npm run open\"",
+    "start": " concurrently -n build,http,browser \"npm-watch\" \"npm run http\" \"npm run open\"",
     "http": "serve dist",
     "open": "start http://localhost:3000",
     "build": "node build.js",
-    "deploy": "node build.js && set CACHE_DIR=/tmp&& gh-pages -d dist -b master"
+    "deploy": "node build.js && set CACHE_DIR=/tmp&& gh-pages -d dist -b master",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "fs-extra": "^11.3.0",
     "gh-pages": "^6.3.0",
     "klaw": "^4.1.0",
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "npm-watch": "^0.13.0"
   }
 }
