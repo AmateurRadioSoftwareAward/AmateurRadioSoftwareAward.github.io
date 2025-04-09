@@ -1,0 +1,61 @@
+<!-- build:title -->- 2024 Special Event Stations K5A, K5R, K5S<!-- /build:title -->
+<!-- build:head -->
+<link href="/lib/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="/lib/tabulator.min.js"></script> 
+<script>
+  var dateTimeFormatter = function(cell, formatterParams, onRendered) {
+    const date = new Date(cell.getValue());
+    return date.toLocaleString();
+  }
+
+  var frequencyFormatter = function(cell, formatterParams, onRendered) {
+    return isNaN(cell.getValue()) ? cell.getValue() : cell.getValue() + " MHz";
+  }
+
+  $(document).ready( function() {
+    var table = new Tabulator("#spots", {
+      ajaxURL: "2025-ARSA-Special-Event-Spots.json",
+      layout: "fitDataTable",
+      tooltips: true,
+      columns: [
+        {title: "Time", field: "time", formatter: dateTimeFormatter},
+          {title: "Call", field: "callsign"},
+          {title: "Mode", field: "mode"},
+          {title: "Frequency", field: "frequency", formatter: frequencyFormatter},
+          {title: "Notes", field: "notes"},
+        ],
+        initialSort: [
+          {column: "time", dir: "desc"}
+        ]
+    });
+
+  setInterval(() => table.replaceData(), 60000); 
+
+});
+</script>
+<!-- /build:head -->
+<!-- build:content -->
+  <h1>Special Event Stations - K5A, K5R, K5S</h1>
+  <p>
+    We are operating the special event stations <b>K5A</b>, <b>K5R</b> and <b>K5S</b> from <b>Saturday, September 28th through Sunday, October 6th, 2024</b> to promote innovative, free and open amateur radio software.<br />
+	  During the event we honor the 2024 award recipients Jakob Ketterl (DD5JFK) for OpenWebRX and Marat Fayzullin (KC1TXE) for OpenWebRX+.<br />
+	  As part of the special event we encourage people to submit nominations for the 2025 Amateur Radio Software Award.
+  </p>
+
+  <center>
+    <img src="2024 ARSA Special Event QSL Card.png" alt="2024 ARSA Special Event QSL Card" style="max-width: 25%; height: auto; width: auto\9;" />
+  </center>
+  
+  <p>
+  A small encore event for <b>K5S</b> will be over the X-mas week between <b>Tuesday, December 24th through Tuesday, December 31th, 2024</b> between the holiday festivities.  Operations will most likely be on 20m SSB and FT8.
+  </p>
+
+  <h3>Latest Spots</h3>
+  <p> These are spots via the Github action which are committed to https://arsaward.com/2025-ARSA-Special-Event-Spots.json</p>
+  <div id="spots"></div>
+ 
+  <h3>Current activity:</h3>
+  <p> This is an iframe of the spotting page at http://qsopartyhub.com/classic-exchange-spots.php</p>
+  <div><iframe src="http://qsopartyhub.com/classic-exchange-spots.php" width="1160" height="1000" frameborder="2" scrolling="auto"> </iframe></div>
+
+<!-- /build:content -->
