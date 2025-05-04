@@ -1,0 +1,37 @@
+[
+    {
+        "time": "2025-04-09T19:23:03.990Z",
+        "callsign": "K6A",
+        "frequency": "14.2007",
+        "mode": "SSB",
+        "notes": ""
+    },
+    {
+        "time": "2025-04-09T19:25:10.208Z",
+        "callsign": "K6A",
+        "frequency": "0.000",
+        "mode": "See notes",
+        "notes": "This is a test announcement"
+    },
+    {
+        "time": "2025-05-09T19:25:10.208Z",
+        "callsign": "K6R",
+        "frequency": "lll",
+        "mode": "See notes",
+        "notes": "This is a test announcement"
+    },
+    {
+        "time": "2025-04-07T19:25:10.208Z",
+        "callsign": "K6S",
+        "frequency": "56.0",
+        "mode": "See notes",
+        "notes": "This is a test announcement"
+    },
+    {
+        "time": "2025-04-09T19:25:10.208Z",
+        "callsign": "K6A",
+        "frequency": "0.000",
+        "mode": "See notes",
+        "notes": "This is a test announcement2"
+    }
+]
