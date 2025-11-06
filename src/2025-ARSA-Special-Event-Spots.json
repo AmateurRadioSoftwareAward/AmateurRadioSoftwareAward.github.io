@@ -28,10 +28,17 @@
         "notes": "This is a test announcement"
     },
     {
-        "time": "2025-04-09T19:25:10.208Z",
-        "callsign": "K6A",
+        "time": "2025-11-08T03:25:10.208Z",
+        "callsign": "K6S",
         "frequency": "0.000",
-        "mode": "See notes",
-        "notes": "This is a test announcement2"
+        "mode": "40m FT8",
+        "notes": "40m FT8"
+    },
+    {
+        "time": "2025-11-08T04:25:10.208Z",
+        "callsign": "K6S",
+        "frequency": "0.000",
+        "mode": "40m PHONE",
+        "notes": "40m PHONE"
     }
 ]
