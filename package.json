@@ -31,10 +31,10 @@
   "homepage": "https://amateurradiosoftwareaward.github.io/",
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "fs-extra": "^11.3.3",
+    "fs-extra": "^11.3.4",
     "gh-pages": "^6.3.0",
     "klaw": "^4.1.0",
-    "serve": "^14.2.5",
+    "serve": "^14.2.6",
     "npm-watch": "^0.13.0"
   }
 }
